@@ -1,7 +1,27 @@
 #content {
   margin-left: auto;
   margin-right: auto;
-  width: 650px;
+  width: 95%;
+  text-align:center;
+  font-family: Georgia, serif;
+}
+body {
+  background-color: lightskyblue;
+}
+
+img {
+    max-width:50%;
+    height:auto;
+}
+
+.projects {
+    max-width:50%;
+    height:auto;
+}
+
+.profile {
+    width: 250px;
+    height: auto;
 }
 
 #greeting-container {
