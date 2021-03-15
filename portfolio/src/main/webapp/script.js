@@ -26,3 +26,11 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+async function getSecret() {
+  const responseFromServer = await fetch('/secret');
+  const textFromResponse = await responseFromServer.text();
+
+  const secretText = document.getElementById('secret');
+  secretText.innerHTML = textFromResponse;
+}
