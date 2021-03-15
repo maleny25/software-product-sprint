@@ -16,9 +16,9 @@ public class Secret extends HttpServlet {
         response.getWriter().println("<h1>You found the secret!</h1>");
         response.getWriter().println("<p>I like to watch musicals</p>");
 
-        response.getWriter().println("<iframe src=\"https://gifer.com/embed/O8mt\" width=480 height=187.000 frameBorder=\"0\" allowFullScreen></iframe><p></p>");
-        response.getWriter().println("<iframe src=\"https://giphy.com/embed/26vIfjCYWUeCoIaB2\" width=\"480\" height=\"265\" frameBorder=\"0\" class=\"giphy-embed\" allowFullScreen></iframe><p></p>");
-        response.getWriter().println("<iframe src=\"https://gifer.com/embed/7sKv\" width=480 height=159.360 frameBorder=\"0\" allowFullScreen></iframe>");
+        response.getWriter().println("<p><iframe src=\"https://gifer.com/embed/O8mt\" width=480 height=187.000 frameBorder=\"0\" allowFullScreen></iframe></p>");
+        response.getWriter().println("<p><iframe src=\"https://giphy.com/embed/26vIfjCYWUeCoIaB2\" width=\"480\" height=\"265\" frameBorder=\"0\" class=\"giphy-embed\" allowFullScreen></iframe></p>");
+        response.getWriter().println("<p><iframe src=\"https://gifer.com/embed/7sKv\" width=480 height=159.360 frameBorder=\"0\" allowFullScreen></iframe></p>");
 
     }
 }
