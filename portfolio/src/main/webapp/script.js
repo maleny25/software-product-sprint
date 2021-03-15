@@ -34,3 +34,11 @@ async function getSecret() {
   const secretText = document.getElementById('secret');
   secretText.innerHTML = textFromResponse;
 }
+
+async function getRandomFact() {
+  const responseFromServer = await fetch('/fact');
+  const factResponse = await responseFromServer.json();
+
+  const facts = document.getElementById('fact-container');
+  facts.innerText = factResponse[Math.floor(Math.random() * factResponse.length)].fact;
+}
