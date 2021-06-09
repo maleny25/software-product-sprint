@@ -13,13 +13,16 @@
       <p>My name is Maleny Ruiz. I am a sophomore at the 
           University of California Berkeley studying Computer Science and Film.
       </p>
+      <p>Click here to get a random fact about me:</p>
+      <button onclick="getRandomFact()">Fact</button>
+      <div id="fact-container"></div>
       <h2>Travel</h2>
        <p>I like to travel with friends and family. These are a few places that I have been to.</p>
        <img src = "images/IMG_1483.JPG" />
        <img src = "images/IMG_0961.JPG" />
        <img src = "images/Tulum.png" />
        <img src = "images/Disney.png" />
-       <img src = "images/Piza.png" />
+       <img src = "images/Pisa.png" />
        <img src = "images/Rome.png" />
        <img src = "images/SpaceNeedle.png" />
 
@@ -33,11 +36,27 @@
            
            <a href="github.com/maleny">Github</a>
        </p>
-       
-      <!-- <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
+        <p>Click <a href="/secret">here</a> to find a secret.</p>
+        <button onclick="getSecret();">
+        Get secret
+        </button>
+        <p id = "secret"></p>
+
+        <form action="/form-handler" method="POST">
+        <p>Enter your name here:</p>
+        <textarea name="name-input">Name</textarea>
+        <p>Enter your email here:</p>
+        <textarea name="email-input">example@gmail.com</textarea>
+        <br/>
+        <input type="submit" />
+        </form>
+      <!-- <p>Click <a href="/hello">here</a> to see content created by server code.</p> -->
+      <!-- <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div> -->
+
+
+
     </div>
   </body>
 </html>
