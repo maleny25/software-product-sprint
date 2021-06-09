@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Maleny's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDktKsIxPZkQ_EaZoRVlB-MP1VUqWwcH-0"></script>    <script src="script.js"></script>
   </head>
-  <body>
+  <body onload="createMap();">
     <div id="content">
       <h1>Maleny's Portfolio</h1>
       <img class="profile" src = "/images/Photo.png" />
@@ -18,17 +18,20 @@
       <div id="fact-container"></div>
       <h2>Travel</h2>
        <p>I like to travel with friends and family. These are a few places that I have been to.</p>
-       <img src = "images/IMG_1483.JPG" />
-       <img src = "images/IMG_0961.JPG" />
-       <img src = "images/Tulum.png" />
-       <img src = "images/Disney.png" />
-       <img src = "images/Pisa.png" />
-       <img src = "images/Rome.png" />
-       <img src = "images/SpaceNeedle.png" />
+
+        <div id="map"></div>
 
        <h2>Projects</h2>
            <p>Build Your Own World</p>
            <img class="projects" src= "images/BYOW.png"/>
+
+      <h3>Secret</h3>
+      <p>Click <a href="/secret">here</a> to find a secret.</p>
+        <button onclick="getSecret();">
+        Get secret
+        </button>
+        <p id = "secret"></p>
+
 
        <h2>Connect With Me</h2>
        <p>
@@ -36,11 +39,6 @@
            
            <a href="github.com/maleny">Github</a>
        </p>
-        <p>Click <a href="/secret">here</a> to find a secret.</p>
-        <button onclick="getSecret();">
-        Get secret
-        </button>
-        <p id = "secret"></p>
 
         <form action="/form-handler" method="POST">
         <p>Enter your name here:</p>
@@ -58,5 +56,6 @@
 
 
     </div>
+
   </body>
 </html>

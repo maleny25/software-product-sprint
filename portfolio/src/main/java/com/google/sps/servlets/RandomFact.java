@@ -10,6 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/fact")
 public class RandomFact extends HttpServlet {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = -6817457809219846972L;
+
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("application/json;");

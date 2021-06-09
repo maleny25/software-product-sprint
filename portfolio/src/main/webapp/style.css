@@ -22,8 +22,16 @@ img {
 .profile {
     width: 250px;
     height: auto;
+    border-radius: 50%;
 }
 
 #greeting-container {
   margin-top: 20px;
+}
+
+#map {
+  height: 500px;
+  width: 90%;
+  margin-left: auto; 
+  margin-right: auto;
 }
