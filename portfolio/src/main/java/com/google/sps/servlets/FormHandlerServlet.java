@@ -9,7 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/form-handler")
 public class FormHandlerServlet extends HttpServlet {
 
-  @Override
+    /**
+     *
+     */
+    private static final long serialVersionUID = 6734233536872851287L;
+
+    @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
     // Get the value entered in the form.
@@ -23,6 +28,6 @@ public class FormHandlerServlet extends HttpServlet {
     // Write the value to the response so the user can see it.
     response.getWriter().println("Thank you " + textValue + ", I will contact you soon at " + email);
     response.setContentType("text/html;");
-    response.getWriter().println("<p></p><a href=\"index.html\">go back</a>");
+    response.getWriter().println("<p></p><a href=\"index.html\">back</a>");
   }
 }
